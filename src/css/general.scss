@@ -1,0 +1,274 @@
+$color-gold: #d0ab62;
+$color-champagne: rgb(240, 204, 147);
+$color-brown: #995500;
+$color-lavender: #b08ffc;
+$color-violet: #7d45fc;
+$color-bright: #eee;
+$color-dark-transparent: rgba(34, 34, 34, 0.5);
+
+/* == debug == */
+// * {
+//   outline: dotted 2px green;
+// }
+
+// == By Tag ==
+a:hover,
+a:link,
+a:visited {
+  color: initial;
+  text-decoration: none;
+}
+
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+}
+
+body {
+  background-color: $color-bright;
+  z-index: -1;
+}
+
+button {
+  background-color: $color-lavender;
+  border: none;
+  font-size: 18px;
+  font-weight: bolder;
+  text-shadow: $color-violet;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+h1 {
+  color: $color-brown;
+  text-shadow: 2px 2px $color-gold;
+  font-size: 3.2em;
+  font-family: "Tangerine", sans-serif;
+}
+
+h2 {
+  color: $color-dark-transparent;
+  font-size: 1.2vw;
+  word-spacing: 0.1em;
+}
+
+h3 {
+  color: black;
+  font-family: "Aria", sans-serif;
+}
+
+h4,
+h5,
+h6 {
+  color: black;
+  font-family: "Arial", cursive;
+}
+
+header {
+  a:hover,
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+// == By Class ==
+.bg-white {
+  background-color: white;
+}
+
+.btn-go {
+  color: black;
+  font-family: Arial Black;
+  margin: 15px 0 0 0;
+}
+
+.btn-lavender {
+  color: $color-dark-transparent;
+  background-color: $color-lavender;
+}
+
+.btn-violet {
+  color: $color-bright;
+  background-color: $color-violet;
+}
+
+.crop {
+  overflow: hidden;
+}
+
+.card-title {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 110%;
+  color: #000;
+}
+
+.form-white-bg {
+  background-color: white;
+  min-width: 300px;
+  min-height: 200px;
+  padding: 30px 20px 20px 20px;
+  border-radius: 15px;
+  label {
+    font-size: 1.2vw;
+  }
+
+  .title {
+    padding-left: 20px;
+  }
+}
+
+.row-card {
+  display: none;
+}
+
+.fit {
+  width: 50vw;
+  max-width: 99%;
+  max-height: 99%;
+}
+
+.font-arial {
+  font-family: "Gotu", Helvetica, sans-serif;
+}
+
+.banner {
+  padding: 10px 0;
+  min-height: 10px;
+}
+
+.breadcrumb {
+  color: #000;
+  background-color: $color-bright;
+  opacity: 0.4;
+  display: inline-flexbox;
+  position: relative;
+  justify-content: start;
+  justify-content: start;
+}
+
+.jumbotron {
+  width: 100%;
+  margin: 0;
+  padding: 5px;
+  background-image: linear-gradient(
+    105deg,
+    $color-gold,
+    $color-champagne,
+    $color-bright,
+    $color-bright,
+    $color-champagne,
+    $color-champagne,
+    $color-champagne,
+    $color-champagne,
+    $color-bright,
+    $color-bright
+  );
+  color: black;
+  font-size: 1vw;
+  font-family: "Bitter", sans-serif;
+}
+
+.jumbotron2 {
+  width: 100%;
+  margin: 0;
+  padding: 5px;
+  background-color: rgba(238, 238, 238, 0.7);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: black;
+  font-size: 1vw;
+  font-family: "Bitter", sans-serif;
+}
+
+.photo-credit {
+  color: #888;
+  font-size: 7px;
+  font-style: italic;
+  a:link {
+    text-decoration: none;
+    color: inherit;
+  }
+  text-align: center;
+}
+
+.row-content {
+  padding: 50px 0;
+  min-height: 80px;
+}
+
+.text-black {
+  color: black;
+}
+
+.text-orange {
+  color: $color-lavender;
+}
+
+.text-secondary {
+  color: $color-violet;
+}
+
+.text-sm {
+  font-size: 20px;
+}
+
+.text-cursive {
+  font-family: "Lobster", sans-serif;
+}
+
+// == By ID ==
+
+#login {
+  justify-content: right;
+}
+
+#navbar {
+  background-image: initial;
+  text-align: end;
+}
+
+#home-start-button {
+  color: $color-bright;
+}
+
+// == Viewport Size SM ==
+@media only screen and (max-width: 768px) {
+  // == By Tag ==
+  img {
+    resize: 50%;
+  }
+
+  // == By Class ==
+  .fit {
+    width: 50vw;
+    max-width: 99%;
+    max-height: 99%;
+  }
+
+  .text-sm {
+    font-size: 20px;
+  }
+}
+
+// == Viewport Size XS ==
+@media only screen and (max-width: 575px) {
+  // == By Tag ==
+
+  // == By Class ==
+  .fit {
+    width: 90vw;
+    max-width: 99%;
+    max-height: 99%;
+  }
+  .text-sm {
+    font-size: 12px;
+  }
+}
